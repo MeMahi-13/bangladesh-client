@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "leaflet/dist/leaflet.css";
+
+
+@theme {
+  --color-bangladeshGreen: #4D7C0F;
+  --color-maximumRed: #F42A41;
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f4f6;
+  --color-neutral: #333333;
+  --color-neutral-content: #ffffff;
+}
