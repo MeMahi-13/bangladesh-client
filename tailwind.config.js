@@ -1,11 +1,11 @@
-
-
-export default {
-  darkMode: 'class',
-  content: ['./index.html', './src/**/*.{js,jsx}'],
-  theme: {
-    extend: {},
+/** @type {import('tailwindcss').Config} */
+export const darkMode = 'class';
+export const content = ['./index.html', './src/**/*.{js,jsx}'];
+export const theme = {
+  extend: {
+    fontFamily: {
+      bengali: ['"Noto Sans Bengali"', 'sans-serif'],
+    },
   },
-  plugins: [],
-  
 };
+export const plugins = [];

@@ -1,0 +1,117 @@
+{
+  "emergencyNumbers": [
+    {
+      "service": "Police",
+      "number": "999",
+      "description": "National emergency police number",
+      "iconColor": "text-red-600"
+    },
+    {
+      "service": "Ambulance",
+      "number": "199",
+      "description": "Medical emergency services",
+      "iconColor": "text-blue-600"
+    },
+    {
+      "service": "Fire Service",
+      "number": "101",
+      "description": "Fire emergencies",
+      "iconColor": "text-orange-500"
+    },
+    {
+      "service": "Child Helpline",
+      "number": "1098",
+      "description": "Child protection",
+      "iconColor": "text-pink-500"
+    },
+    {
+      "service": "Road Accident Help",
+      "number": "16263",
+      "description": "Accident & rescue",
+      "iconColor": "text-yellow-600"
+    },
+    {
+      "service": "Disaster Management",
+      "number": "106",
+      "description": "Natural disasters support",
+      "iconColor": "text-green-600"
+    }
+  ],
+
+"firstAidTips": [
+  {
+    "title": "Bleeding",
+    "info": [
+      "Apply firm pressure with a clean cloth or bandage.",
+      "Keep the injured area elevated to reduce blood flow.",
+      "If bleeding doesn’t stop, seek medical help immediately."
+    ],
+    "medicines": ["Savlon Liquid", "Antiseptic Cream (Soframycin, Fucidin)"],
+    "image": "https://i.postimg.cc/0NNTKF0R/pexels-cottonbro-5721552.jpg"
+  },
+  {
+    "title": "Burns",
+    "info": [
+      "Cool the burn under running water for 10–20 minutes.",
+      "Do not apply oil, toothpaste, or butter.",
+      "Cover loosely with a clean, non-stick cloth or gauze."
+    ],
+    "medicines": ["Burnol Cream", "Silver Sulfadiazine (Flamazine)"],
+    "image": "https://i.postimg.cc/4yM6wKrQ/pexels-burst-545013.jpg"
+  },
+  {
+    "title": "Choking",
+    "info": [
+      "Encourage the person to cough if possible.",
+      "If breathing stops, perform Heimlich maneuver (abdominal thrusts).",
+      "Call emergency services if not relieved."
+    ],
+    "medicines": ["Not applicable – immediate action required"],
+    "image": "https://i.postimg.cc/gjDJk1KX/2100x1200-UK-What-to-do-if-someone-is-choking.png"
+  },
+  {
+    "title": "Fractures",
+    "info": [
+      "Do not move the injured area unnecessarily.",
+      "Immobilize with a splint or cloth support.",
+      "Apply cold packs to reduce swelling.",
+      "Seek hospital care immediately."
+    ],
+    "medicines": ["Pain relievers (Napa, Ace)", "Ice pack (for swelling)"],
+    "image": "https://i.postimg.cc/sX3CDxHm/Adobe-Stock-594927383-1.jpg"
+  },
+  {
+    "title": "Heat Stroke",
+    "info": [
+      "Move the person to a cool, shaded place.",
+      "Loosen clothing and apply wet cloths.",
+      "Give small sips of water or ORS if conscious."
+    ],
+    "medicines": ["ORS (Oral Rehydration Salts)", "Paracetamol (Napa) if fever"],
+    "image": "https://i.postimg.cc/fTHHVK51/heat-exhuastion-city-1499649010.webp"
+  },
+  {
+    "title": "Food Poisoning",
+    "info": [
+      "Drink plenty of fluids to prevent dehydration.",
+      "Take small sips of ORS frequently.",
+      "Avoid spicy and oily food until recovered.",
+      "Seek medical help if severe vomiting/diarrhea persists."
+    ],
+    "medicines": ["ORS", "Zinc Tablets", "Domperidone (for vomiting)"],
+    "image": "https://i.postimg.cc/j5K9Hjf1/Top-7-Causes-of-Food-Poisoning-2.webp"
+  },
+  {
+    "title": "Snake Bite",
+    "info": [
+      "Keep the patient calm and still.",
+      "Do not try to suck out the venom.",
+      "Keep the bitten area lower than the heart.",
+      "Seek hospital immediately for anti-venom."
+    ],
+    "medicines": ["No home medicine – Anti-venom at hospital only"],
+    "image": "https://i.postimg.cc/B6qY8V99/sm-snake-bites-hero.jpg"
+  }
+]
+
+}

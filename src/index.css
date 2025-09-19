@@ -1,16 +1,109 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@custom-variant dark (&:where(.dark, .dark *));
 
 @import "leaflet/dist/leaflet.css";
 
 
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+}
+.sirivennela-regular {
+  font-family: "Sirivennela", sans-serif;
+
+}
+
+
+
+
+
+
 @theme {
-  --color-bangladeshGreen: #4D7C0F;
-  --color-maximumRed: #F42A41;
+  --color-blue: #1B3C53;
+  --color-lightblue: #D3DAD9;
   --color-base-100: #ffffff;
   --color-base-200: #f3f4f6;
   --color-neutral: #333333;
   --color-neutral-content: #ffffff;
 }
+
+/* Define animatable custom property */
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* Border wrapper */
+.animate-border {
+  position: relative;
+  padding: 3px; /* thickness of border */
+  border-radius: 1rem;
+  background: conic-gradient(
+    from var(--angle),
+    rgb(46, 154, 248),
+    #f03,
+    rgb(33, 40, 234),
+    rgb(195, 0, 255)
+  );
+  animation: rotate 4s linear infinite;
+}
+
+/* Inner content */
+.animate-border > .inner {
+  border-radius: 0.9rem; /* slightly smaller to show border */
+  background: #223;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-pulseGlow: pulseGlow 2s infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Keep it loaded but hidden */
+#google_translate_element {
+  position: absolute;
+  left: -9999px; /* push off-screen */
+  top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
